@@ -1,3 +1,4 @@
+#define NDEBUG
 #ifndef _PICO_BTSTACK_BTSTACK_CONFIG_H
 #define _PICO_BTSTACK_BTSTACK_CONFIG_H
 
@@ -66,7 +67,7 @@
 #define HAVE_EMBEDDED_TIME_MS
 
 // map btstack_assert onto Pico SDK assert()
-//#define HAVE_ASSERT
+#define HAVE_ASSERT
 
 // Some USB dongles take longer to respond to HCI reset (e.g. BCM20702A).
 #define HCI_RESET_RESEND_TIMEOUT_MS 1000
