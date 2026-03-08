@@ -40,15 +40,15 @@
 #define MAX_NR_LE_DEVICE_DB_ENTRIES 16
 
 // Limit number of ACL/SCO Buffer to use by stack to avoid cyw43 shared bus overrun
-#define MAX_NR_CONTROLLER_ACL_BUFFERS 6
-#define MAX_NR_CONTROLLER_SCO_PACKETS 6
+#define MAX_NR_CONTROLLER_ACL_BUFFERS 10
+#define MAX_NR_CONTROLLER_SCO_PACKETS 10
 
 // Enable and configure HCI Controller to Host Flow Control to avoid cyw43 shared bus overrun
 #define ENABLE_HCI_CONTROLLER_TO_HOST_FLOW_CONTROL
 #define HCI_HOST_ACL_PACKET_LEN 1024
-#define HCI_HOST_ACL_PACKET_NUM 6
+#define HCI_HOST_ACL_PACKET_NUM 10
 #define HCI_HOST_SCO_PACKET_LEN 120
-#define HCI_HOST_SCO_PACKET_NUM 6
+#define HCI_HOST_SCO_PACKET_NUM 10
 
 #ifndef HCI_INCOMING_PRE_BUFFER_SIZE
 #define HCI_INCOMING_PRE_BUFFER_SIZE 6
